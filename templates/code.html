@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Code here</h1>
+<div class="dropdown" style="padding-bottom: 20px; padding-top:20px;">
+    <button class="btn btn-secondary dropdown-toggle" id="but" value="choose" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Choose Language
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a onclick="defaultText('cpp')" id="cpp" class="dropdown-item">C++</a>
+      <a onclick="defaultText('java')" class="dropdown-item">JAVA</a>
+    </div>
+  </div>
+
+<div class="form-group">    
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="18" style="max-width: 45%" onkeypress="disableButton()" style="background-color:rgb(33,33,33);"></textarea>        
+</div>
+
+<button type="button" onclick="loadDoc()" class="btn btn-primary">Compile</button>
+<button type="button"  onclick="checkTestCases()" class="btn btn-primary" disabled=True id="compile">Run Test Cases</button>
+{% endblock content %}

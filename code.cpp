@@ -1,18 +1,19 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
-typedef long long ll;
-int main()
+int main(){
+ 
+ 
+//write your code here
+int t;
+cin>>t;
+while(t--)
 {
 
-    int t;
-    cin>>t;
-    while(t--)
-    {
-        ll a,b;
-        cin>>a>>b;
-        //cout<<"ans "<<a<<" "<<b<<endl;
-        cout<<a+b<<endl;
-    }
-    
-    return 0;
+ int a,b;
+cin>>a>>b;
+cout<<a+b<<endl;
+} 
+return 0;
+ 
+ 
 }
